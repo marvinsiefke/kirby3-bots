@@ -9,4 +9,4 @@ It is recommended to define a sitemap collection like this in site/collections/s
 
 Otherwise the plugin uses a fallback:
 
-    site()->index()->listed()
+    site()->pages()->index();
