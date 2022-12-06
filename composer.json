@@ -1,0 +1,12 @@
+{
+	"name": "pepper/kirby3-bots",
+	"description": "Provides sitemap.xml, sitemap.txt and robots.txt",
+	"version": "1.0.0",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Marvin Siefke",
+			"email": "info@pepper.green"
+		}
+	]
+}
