@@ -22,7 +22,7 @@ Kirby::plugin('pepper/bots', [
 		[
 			'pattern' => 'sitemap.xml',
 			'action'  => function() {
-				$pages = kirby()->collections()->has('sitemap') ? kirby()->collection('sitemap') : site()->index()->listed();
+				$pages = kirby()->collections()->has('sitemap') ? kirby()->collection('sitemap') : site()->pages()->index();
 				$content = snippet('sitemap', compact('pages'), true);
 				return new Kirby\Cms\Response($content, 'application/xml');
 			}
@@ -31,7 +31,7 @@ Kirby::plugin('pepper/bots', [
 		[
 			'pattern' => 'sitemap.txt',
 			'action' => function () {
-				$pages = kirby()->collections()->has('sitemap') ? kirby()->collection('sitemap') : site()->index()->listed();
+				$pages = kirby()->collections()->has('sitemap') ? kirby()->collection('sitemap') : site()->pages()->index();
 				$content = [
 					site()->url() . '/',
 				];
