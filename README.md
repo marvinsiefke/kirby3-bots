@@ -7,6 +7,6 @@ It is recommended to define a sitemap collection like this in site/collections/s
       return $site->pages()->index()->filterBy('noindex', '!=', 'enabled');
     };
 
-Otherwise the Plugin use a fallback like this:
+Otherwise the plugin uses a fallback:
 
     site()->index()->listed()
