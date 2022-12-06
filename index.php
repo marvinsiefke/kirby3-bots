@@ -33,7 +33,7 @@ Kirby::plugin('pepper/bots', [
 			'action' => function () {
 				$pages = kirby()->collections()->has('sitemap') ? kirby()->collection('sitemap') : site()->pages()->index();
 				$content = [
-					site()->url() . '/',
+					site()->url() . '/'
 				];
 				foreach ($pages as $page) {
 					$content[] = $page->url();
