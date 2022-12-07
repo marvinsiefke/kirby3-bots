@@ -3,9 +3,10 @@
 	"description": "Provides sitemap.xml, sitemap.txt and robots.txt",
 	"version": "1.0.0",
 	"license": "MIT",
+	"homepage": "https://github.com/marvinsiefke/kirby3-bots",
 	"authors": [
 		{
-			"name": "Marvin Siefke",
+			"name": "Marvin Siefke (pepper)",
 			"homepage": "https://pepper.green"
 		}
 	]
