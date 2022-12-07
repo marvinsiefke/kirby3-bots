@@ -5,6 +5,19 @@ Kirby::plugin('pepper/bots', [
 		'sitemap' => __DIR__ . '/snippets/sitemap.php'
 	],
 	'routes' => [
+		// robots.txt
+		[
+			'pattern' => 'robots.txt',
+			'action' => function () {
+				$content = [
+					'User-agent: *',
+					'Disallow: /panel/',
+					'Allow: /',
+					'Sitemap: '.kirby()->url().'/sitemap.xml'
+				];
+				return new Kirby\Cms\Response(implode("\n", $content), 'text/plain');
+			}
+		],
 		// sitemap.xml
 		[
 			'pattern' => 'sitemap.xml',
@@ -23,28 +36,15 @@ Kirby::plugin('pepper/bots', [
 				foreach ($pages as $page) {
 					$content[] = $page->url();
 				}
-				return new Kirby\Cms\Response(join("\n", $content), 'text/plain');
-			},
+				return new Kirby\Cms\Response(implode("\n", $content), 'text/plain');
+			}
 		],
 		// sitemap redirection
 		[
 			'pattern' => 'sitemap',
 			'action' => function () {
 				return go('sitemap.txt', 301);
-			},
-		],
-		// robots.txt
-		[
-			'pattern' => 'robots.txt',
-			'action' => function () {
-				$content = [
-					'User-agent: *',
-					'Disallow: /panel/',
-					'Allow: /',
-					'Sitemap: '.kirby()->url().'/sitemap.xml'
-				];
-				return new Kirby\Cms\Response(join("\n", $content), 'text/plain');
-			},
+			}
 		]
-	],
+	]
 ]);
