@@ -2,7 +2,7 @@
 
 Kirby::plugin('pepper/bots', [
 	'snippets' => [
-		'sitemap' => __DIR__ . '/snippets/sitemap.php'
+		'sitemap' => __DIR__.'/snippets/sitemap.php'
 	],
 	'routes' => [
 		// robots.txt
