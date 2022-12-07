@@ -1,5 +1,13 @@
+
 # kirby3-bots
-Kirby plugin for providing sitemap.xml, sitemap.txt and robots.txt
+Kirby plugin for providing sitemap.xml, sitemap.txt and robots.txt.
+
+## Demo
+You can see some exemplary results here:
+
+ - https://pepper.green/sitemap.xml
+ - https://pepper.green/sitemap.txt
+ - https://pepper.green/robots.txt
 
 ## Configuration
 
