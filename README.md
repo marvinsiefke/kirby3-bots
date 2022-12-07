@@ -9,6 +9,8 @@ It is recommended to define a sitemap collection like this in site/collections/s
       return $site->pages()->index()->filterBy('noindex', '!=', 'enabled');
     };
 
-You can read more in Kirby's documentation: https://getkirby.com/docs/guide/templates/collections. Otherwise the plugin uses a fallback:
+You can read more in Kirby’s documentation: https://getkirby.com/docs/guide/templates/collections.
+
+Otherwise the plugin uses a fallback:
 
     site()->pages()->index();
