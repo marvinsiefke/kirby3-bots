@@ -1,6 +1,6 @@
 <?php
 
-Kirby::plugin('pepper/bots', [
+Kirby::plugin('pepper/kirby3-bots', [
 	'snippets' => [
 		'sitemap' => __DIR__.'/snippets/sitemap.php'
 	],
