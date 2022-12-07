@@ -1,6 +1,6 @@
 
 # kirby3-bots
-Kirby plugin for providing sitemap.xml, sitemap.txt and robots.txt.
+kirby3-bots is a very lightweight Kirby3 plugin for providing sitemap.xml, sitemap.txt and robots.txt.
 
 ## Demo
 You can see some exemplary results here:
