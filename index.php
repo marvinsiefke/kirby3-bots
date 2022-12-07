@@ -15,7 +15,7 @@ Kirby::plugin('pepper/bots', [
 					'Allow: /',
 					'Sitemap: '.kirby()->url().'/sitemap.xml'
 				];
-				return new Response(join("\n", $content), 'text/plain');
+				return new Kirby\Cms\Response(join("\n", $content), 'text/plain');
 			},
 		],
 		// sitemap.xml
@@ -36,7 +36,7 @@ Kirby::plugin('pepper/bots', [
 				foreach ($pages as $page) {
 					$content[] = $page->url();
 				}
-				return new Response(join("\n", $content), 'text/plain');
+				return new Kirby\Cms\Response(join("\n", $content), 'text/plain');
 			},
 		],
 		// sitemap redirection
