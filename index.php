@@ -43,7 +43,7 @@ Kirby::plugin('pepper/kirby3-bots', [
 		[
 			'pattern' => 'sitemap',
 			'action' => function () {
-				return go('sitemap.txt', 301);
+				return go('sitemap.xml', 301);
 			}
 		]
 	]
